@@ -12,6 +12,7 @@ Group:		Development/Perl
 Source0:	http://www.cpan.org/authors/id/KWILLIAMS/%{module}-%{version}.tar.bz2
 Url:		http://www.cpan.org/
 BuildRequires:	perl-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	perl
 BuildArch:	noarch
 
