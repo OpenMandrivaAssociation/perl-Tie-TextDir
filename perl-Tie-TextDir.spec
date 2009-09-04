@@ -1,7 +1,7 @@
 %define module	Tie-TextDir
 %define	name	perl-%{module}
 %define version 0.06
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary:	%{module} module for perl
 Name:		%{name}
