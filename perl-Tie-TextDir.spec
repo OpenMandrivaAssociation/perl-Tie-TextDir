@@ -1,26 +1,24 @@
-%define module	Tie-TextDir
-%define	name	perl-%{module}
-%define version 0.06
-%define release %mkrel 6
+%define upstream_name       Tie-TextDir
+%define upstream_version    0.06
 
-Summary:	%{module} module for perl
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-License:	MPL
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+License:    GPL or Artistic
+Summary:	Interface to directory of file
 Group:		Development/Perl
-Source0:	http://www.cpan.org/authors/id/KWILLIAMS/%{module}-%{version}.tar.bz2
-Url:		http://www.cpan.org/
-BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires:	perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source:     http://www.cpan.org/modules/by-module/Tie/%{upstream_name}-%{upstream_version}.tar.gz
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
-%{module} module for perl
+The Tie::TextDir module is a TIEHASH interface which lets you tie a Perl hash
+to a directory on the filesystem. Each entry in the hash represents a file in
+the directory.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
