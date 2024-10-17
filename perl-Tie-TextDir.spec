@@ -7,7 +7,7 @@ Release:	4
 License:	GPL or Artistic
 Summary:	Interface to directory of file
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source:		http://www.cpan.org/modules/by-module/Tie/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 BuildArch:	noarch
