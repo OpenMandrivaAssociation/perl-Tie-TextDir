@@ -1,14 +1,12 @@
 %define upstream_name       Tie-TextDir
-%define upstream_version    0.07
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.07
+Release:	2
 License:	GPL or Artistic
 Summary:	Interface to directory of file
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Tie-TextDir
-Source:		https://cpan.metacpan.org/authors/id/K/KW/KWILLIAMS/Tie-TextDir-%{upstream_version}.tar.gz
+Source:		https://cpan.metacpan.org/authors/id/K/KW/KWILLIAMS/Tie-TextDir-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -19,7 +17,7 @@ to a directory on the filesystem. Each entry in the hash represents a file in
 the directory.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
