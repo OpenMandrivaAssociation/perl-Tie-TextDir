@@ -1,7 +1,8 @@
 %define upstream_name       Tie-TextDir
+%define upstream_version 0.07
 Name:		perl-%{upstream_name}
 Version:	0.07
-Release:	2
+Release:	1
 License:	GPL or Artistic
 Summary:	Interface to directory of file
 Group:		Development/Perl
